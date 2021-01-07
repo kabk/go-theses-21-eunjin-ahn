@@ -75,11 +75,11 @@ b {
 
 body::-webkit-scrollbar {
     width: 0.6em;
-    background-color: #000000;
+    background-color: #FDF1E8;
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #ffffff;
+    background-color: #FDF1E8;
 }
 
 body::-webkit-scrollbar-thumb {
