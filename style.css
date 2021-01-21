@@ -115,6 +115,12 @@ ol {
 
 }
 
+.note {
+  font-size: 12pt;
+  color: #aa2724;
+line-height: normal;
+}
+
 @-webkit-keyframes colorchange {
       0% {
 
@@ -277,10 +283,6 @@ font-weight: 400;
   background-color: transparent;
 }
 
-.note {
-  font-size: 13pt;
-  color: #FA5858;
-}
 
 p {
   margin: 0;
