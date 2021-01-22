@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
 @charset "UTF-8";
+
 :root {
   --color_base: #191919;
   --color_pen: #fff;
@@ -27,23 +28,26 @@ body {
   overflow-x: hidden;
   margin-top: 20px;
   counter-reset: footnotes;
-
 }
 
 sup {
-  content: '[' counter(footnotes) ']'; /* 1 */
-  font-size: 10pt; /* 3 */
-  margin-left: 2px; /* 4 */
+  content: '['counter(footnotes) ']';
+  /* 1 */
+  font-size: 10pt;
+  /* 3 */
+  margin-left: 2px;
+  /* 4 */
   margin-top: 10px;
-  color: #aa2724; /* 5 */
-  text-decoration: underline; /* 5 */
-  cursor: pointer; /* 5 */
+  color: #aa2724;
+  /* 5 */
+  text-decoration: underline;
+  /* 5 */
+  cursor: pointer;
+  /* 5 */
 }
-
 
 footer {
   font-size: 12pt;
-
   width: 98%;
   margin-top: 50px;
   border-top: 0px solid silver;
@@ -58,18 +62,22 @@ footer ol {
 /**
  * Initialiazing a `footnotes` counter on the wrapper
  */
-
 /**
  * Inline footnotes references
  * 1. Increment the counter at each new reference
  * 2. Reset link styles to make it appear like regular text
  */
 [aria-describedby="footnote-label"] {
-  counter-increment: footnotes; /* 1 */
-  text-decoration: none; /* 2 */
-  color: inherit; /* 2 */
-  cursor: default; /* 2 */
-  outline: none; /* 2 */
+  counter-increment: footnotes;
+  /* 1 */
+  text-decoration: none;
+  /* 2 */
+  color: inherit;
+  /* 2 */
+  cursor: default;
+  /* 2 */
+  outline: none;
+  /* 2 */
 }
 
 /**
@@ -80,7 +88,6 @@ footer ol {
  * 4. Slightly offset the number from the text
  * 5. Reset link styles on the number to show it's usable
  */
-
 /**
  * Resetting the default focused styles on the number
  */
@@ -109,8 +116,6 @@ footer :target {
   visibility: hidden;
   opacity: 0;
 }
-
-
 
 a {
   text-decoration: none;
@@ -144,7 +149,6 @@ a:active {
   font-family: 'Old Standard TT', serif;
 }
 
-
 ::selection {
   color: #aa2724;
   background: #F8E6E0;
@@ -170,36 +174,34 @@ a:active {
   background-color: transparent;
 }
 
-
 b {
   font-weight: 700;
 }
-
 
 ol {
   padding-left: 1.2em;
 }
 
-
 .halloctober {
   width: 100%;
   height: 100%;
   margin-top: 30px;
-margin-left: -50px;
+  margin-left: -50px;
 }
+
 .halloctober__banner {
   margin: auto;
   padding: 0px;
-    height: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
 
 .typo {
-    height: 100%;
+  height: 100%;
   cursor: default;
   font-family: 'Cardo', serif;
-    color: #aa2724;
+  color: #aa2724;
   font-size: 50pt;
   font-weight: normal;
   width: 30%;
@@ -210,12 +212,14 @@ margin-left: -50px;
   position: relative;
   transform: skew(8deg, 3deg);
   -webkit-animation: float 5s ease-in-out infinite;
-          animation: float 5s ease-in-out infinite;
+  animation: float 5s ease-in-out infinite;
 }
-.typo:hover + .fog {
+
+.typo:hover+.fog {
   -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
 }
+
 .typo::before, .typo::after {
   color: transparent;
   content: "I’ve Smelled the Blood, That Touches My Tongue.";
@@ -224,88 +228,101 @@ margin-left: -50px;
   left: 0;
   z-index: -10;
 }
+
 .typo::before {
   -webkit-animation: move_upper_shadow 5s ease-in-out infinite;
-          animation: move_upper_shadow 5s ease-in-out infinite;
+  animation: move_upper_shadow 5s ease-in-out infinite;
   opacity: 0;
   text-shadow: 6px 0 2px rgba(179, 8, 8, 0.4), 12px 0 2px #F8E6E0;
 }
+
 .typo::after {
   -webkit-animation: move_bottom_shadow 5s ease-in-out infinite;
-          animation: move_bottom_shadow 5s ease-in-out infinite;
+  animation: move_bottom_shadow 5s ease-in-out infinite;
   text-shadow: 2px 4px 2px rgba(179, 8, 8, 0.4), 4px 8px 2px #F8E6E0;
 }
+
 @-webkit-keyframes move_upper_shadow {
   0%, 90%, 100% {
     opacity: 0;
     transform: translateX(-2%);
   }
+
   30% {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 @keyframes move_upper_shadow {
   0%, 90%, 100% {
     opacity: 0;
     transform: translateX(-2%);
   }
+
   30% {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 @-webkit-keyframes move_bottom_shadow {
   0%, 90%, 100% {
     opacity: 1;
     transform: translate(0, 0);
   }
+
   30% {
     opacity: 0;
     transform: translateY(-3.5%);
   }
 }
+
 @keyframes move_bottom_shadow {
   0%, 90%, 100% {
     opacity: 1;
     transform: translate(0, 0);
   }
+
   30% {
     opacity: 0;
     transform: translateY(-3.5%);
   }
 }
+
 @-webkit-keyframes float {
   50% {
     transform: scaleY(1.01) skew(-10deg, -2deg);
   }
 }
+
 @keyframes float {
   50% {
     transform: scaleY(1.01) skew(-10deg, -2deg);
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .typo {
     -webkit-animation: none;
-            animation: none;
+    animation: none;
     transform: none;
   }
+
   .typo::before, .typo::after {
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 }
-
 
 .note {
   font-size: 12pt;
   color: #aa2724;
-line-height: normal;
+  line-height: normal;
 }
 
-.left{
-  background-color:#feefe5;
+.left {
+  background-color: #feefe5;
   margin-top: 0px;
   padding: 0px;
   width: 40%;
@@ -317,16 +334,14 @@ line-height: normal;
   overflow-x: hidden;
 }
 
-
 .middle {
   padding: 0px;
-    margin-top: 0px;
+  margin-top: 0px;
   width: 60%;
   vertical-align: top;
   z-index: -100;
-float: right;
-    overflow: hidden;
-
+  float: right;
+  overflow: hidden;
 }
 
 .content {
@@ -338,7 +353,6 @@ float: right;
   font-weight: 300;
   width: 90%;
   margin-left: 31px;
-
 }
 
 .textWithBlur#aa2724Bg:hover :not(img) {
@@ -352,16 +366,14 @@ float: right;
   font-size: 24pt;
   line-height: 1.4em;
   width: 95%;
-font-family: 'Cardo', serif;
-font-weight: 400;
+  font-family: 'Cardo', serif;
+  font-weight: 400;
   background-color: transparent;
-
 }
 
 .panel {
   padding: 0px;
   margin-right: 15px;
-
   margin-top: -15px;
   display: none;
   font-size: 18pt;
@@ -385,83 +397,88 @@ font-weight: 400;
   background-color: transparent;
 }
 
-
 p {
   margin: 0;
 }
+
 @-webkit-keyframes squiggly-anim {
   0% {
     filter: url("#squiggly-0");
   }
+
   25% {
     filter: url("#squiggly-1");
   }
+
   50% {
     filter: url("#squiggly-2");
   }
+
   75% {
     filter: url("#squiggly-3");
   }
+
   100% {
     filter: url("#squiggly-4");
   }
 }
+
 @keyframes squiggly-anim {
   0% {
     filter: url("#squiggly-0");
   }
+
   25% {
     filter: url("#squiggly-1");
   }
+
   50% {
     filter: url("#squiggly-2");
   }
+
   75% {
     filter: url("#squiggly-3");
   }
+
   100% {
     filter: url("#squiggly-4");
   }
 }
 
-
-
-
 @media screen and (max-width: 700px) {
-
-
   .halloctober {
     width: 100%;
     height: 100%;
     margin-top: 30px;
-    margin-left:-30px;
+    margin-left: -30px;
   }
+
   .halloctober__banner {
     margin: auto;
     padding: 0px;
-      height: 100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
   }
 
   .typo {
-      height: 100%;
-      float: left;
+    height: 100%;
+    float: left;
     cursor: default;
     font-family: 'Cardo', serif;
-      color: #aa2724;
+    color: #aa2724;
     font-size: 40pt;
-        padding-bottom: 20px;
+    padding-bottom: 20px;
     font-weight: normal;
     width: 50%;
-      font-weight: 700;
+    font-weight: 700;
     letter-spacing: 0.1rem;
     margin: auto;
     outline: none;
     position: relative;
     transform: skew(10deg, 2deg);
     -webkit-animation: float 5s ease-in-out infinite;
-            animation: float 5s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
   }
 
   #myBtn {
@@ -485,8 +502,7 @@ p {
     background-color: transparent;
   }
 
-
-  .left{
+  .left {
     padding: 20px;
     margin-top: -25px;
     width: 100%;
@@ -495,23 +511,22 @@ p {
     display: block;
     overflow-x: hidden;
     overflow-y: visible;
-    font-family:'Noto Serif', serif;
+    font-family: 'Noto Serif', serif;
     font-size: 14pt;
     line-height: 1.2;
   }
 
   .middle {
     padding: 0px;
-      margin-top: 0px;
+    margin-top: 0px;
     width: 100%;
     vertical-align: top;
     z-index: -100;
-  float: right;
-      overflow: hidden;
-      position: relative;
-      display: block;
+    float: right;
+    overflow: hidden;
+    position: relative;
+    display: block;
   }
-
 
   .content {
     position: relative;
@@ -543,48 +558,46 @@ p {
     width: 91%;
   }
 
-
   a.footnote {
     font-size: 12pt;
-     text-decoration:none;
-     background-color: #feefe5;
-     padding-left: 2px;
-     padding-right: 2px;
-     margin-right: 2px;
-     -webkit-transition: all 2s ease;
-     -moz-transition: all 2s ease;
-     -o-transition: all 2s ease;
-     transition: all 2s ease;
+    text-decoration: none;
+    background-color: #feefe5;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 2px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
   }
 
   a.footnote span {
     font-size: 12pt;
-     z-index: -1;
-     opacity: 0;
-     position: fixed;
-     bottom: 30px;
-     width: 82%;
-     margin-left: -20px;
-     margin-right: 10px;
-     padding:14px 20px;
-     border-radius:4px;
-     border:2px solid #aa2724;
-     background-color: #feefe5;
-     -webkit-transition: all 2s ease;
-     -moz-transition: all 2s ease;
-     -o-transition: all 2s ease;
-     transition: all 2s ease;
-
+    z-index: -1;
+    opacity: 0;
+    position: fixed;
+    bottom: 30px;
+    width: 82%;
+    margin-left: -20px;
+    margin-right: 10px;
+    padding: 14px 20px;
+    border-radius: 4px;
+    border: 2px solid #aa2724;
+    background-color: #feefe5;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
   }
 
   a.footnote:hover span {
     font-size: 12pt;
-     z-index: 9;
-     opacity: 1;
-     -webkit-transition: all 2s ease;
-     -moz-transition: all 2s ease;
-     -o-transition: all 2s ease;
-     transition: all 2s ease;
+    z-index: 9;
+    opacity: 1;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
   }
 
   .responsive {
@@ -603,6 +616,7 @@ p {
     width: 100%;
     background-color: transparent;
   }
+
   footer {
     font-size: 12pt;
     width: 85%;
@@ -615,5 +629,4 @@ p {
   footer ol {
     padding-left: 20px;
   }
-
 }
