@@ -543,7 +543,7 @@ p {
     text-align: left;
     border: solid 1px #feefe5;
     font-size: 20pt;
-    width: 87.5%;
+    width: 99%;
     line-height: 1.4em;
   }
 
@@ -555,7 +555,7 @@ p {
     text-align: left;
     font-family: 'Old Standard TT', serif;
     font-weight: 300;
-    width: 95%;
+    width: 99%;
   }
 
   a.footnote {
