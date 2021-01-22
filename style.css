@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+@charset "UTF-8";
 :root {
-  --duration: 2s;
-  --color-blood: #8a0303;
-  --color-blood-light: #cc1212;
-  --color-light-steel: #595D61;
-  --color-dark-steel: #292728;
+  --color_base: #191919;
+  --color_pen: #fff;
+  --size: 20vmin;
+  --fog: calc(var(--size) / 1.2);
+  --scale: 4.8;
+}
+
+.p-flex {
+  display: flex;
 }
 
 body {
@@ -19,8 +25,56 @@ body {
   color: #aa2724;
   padding: 0px;
   overflow-x: hidden;
-  margin-top: 25px;
+  margin-top: 20px;
 }
+
+sup {
+  font-size: 10pt;
+}
+
+a.footnote {
+  font-size: 12pt;
+   text-decoration:none;
+   background-color: #feefe5;
+   padding-left: 2px;
+   padding-right: 2px;
+   margin-right: 2px;
+   -webkit-transition: all 2s ease;
+   -moz-transition: all 2s ease;
+   -o-transition: all 2s ease;
+   transition: all 2s ease;
+}
+
+a.footnote span {
+  font-size: 12pt;
+   z-index: -1;
+   opacity: 0;
+   position: fixed;
+   left: 40px;
+   bottom: 40px;
+   margin-left: 0px;
+   margin-right: 18px;
+   padding:14px 20px;
+   border-radius:4px;
+   border:2px solid #aa2724;
+   background-color: #feefe5;
+   -webkit-transition: all 2s ease;
+   -moz-transition: all 2s ease;
+   -o-transition: all 2s ease;
+   transition: all 2s ease;
+}
+
+a.footnote:hover span {
+  font-size: 12pt;
+   z-index: 9;
+   opacity: 1;
+   -webkit-transition: all 2s ease;
+   -moz-transition: all 2s ease;
+   -o-transition: all 2s ease;
+   transition: all 2s ease;
+}
+
+
 
 a {
   text-decoration: none;
@@ -90,128 +144,151 @@ ol {
   padding-left: 1.2em;
 }
 
-.header {
-  text-align: center;
-  margin: 0 auto;
-  width: 60%;
-}
 
-
-
-.title {
-  -webkit-animation: squiggly-anim 1.2s linear infinite;
-          animation: squiggly-anim 0.7s linear infinite;
-}
-
-.title {
-  text-align: left;
-  font-family: 'Cardo', serif;
-  color: #aa2724;
-  margin-top: 30px;
-  margin-left: 30px;
+.halloctober {
   width: 100%;
-  font-size: 50pt;
-  line-height: 1.1em;
-
+  height: 100%;
+  margin-top: 30px;
+}
+.halloctober__banner {
+  margin: auto;
+  padding: 0px;
+    height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
+.typo {
+    height: 100%;
+  cursor: default;
+  font-family: 'Cardo', serif;
+    color: #aa2724;
+  font-size: 50pt;
+  font-weight: normal;
+  width: 60%;
+  letter-spacing: 0.1rem;
+  margin: auto;
+  outline: none;
+  position: relative;
+  transform: skew(10deg, 2deg);
+  -webkit-animation: float 5s ease-in-out infinite;
+          animation: float 5s ease-in-out infinite;
+}
+.typo:hover + .fog {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.typo::before, .typo::after {
+  color: transparent;
+  content: "I’ve Smelled the Blood, That Touches My Tongue.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.typo::before {
+  -webkit-animation: move_upper_shadow 5s ease-in-out infinite;
+          animation: move_upper_shadow 5s ease-in-out infinite;
+  opacity: 0;
+  text-shadow: 6px 0 2px rgba(179, 8, 8, 0.4), 12px 0 2px rgba(26, 35, 126, 0.3);
+}
+.typo::after {
+  -webkit-animation: move_bottom_shadow 5s ease-in-out infinite;
+          animation: move_bottom_shadow 5s ease-in-out infinite;
+  text-shadow: 2px 4px 2px rgba(179, 8, 8, 0.4), 4px 8px 2px rgba(26, 35, 126, 0.3);
+}
+@-webkit-keyframes move_upper_shadow {
+  0%, 90%, 100% {
+    opacity: 0;
+    transform: translateX(-2%);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes move_upper_shadow {
+  0%, 90%, 100% {
+    opacity: 0;
+    transform: translateX(-2%);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes move_bottom_shadow {
+  0%, 90%, 100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(-3.5%);
+  }
+}
+@keyframes move_bottom_shadow {
+  0%, 90%, 100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(-3.5%);
+  }
+}
+@-webkit-keyframes float {
+  50% {
+    transform: scaleY(1.01) skew(-10deg, -2deg);
+  }
+}
+@keyframes float {
+  50% {
+    transform: scaleY(1.01) skew(-10deg, -2deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .typo {
+    -webkit-animation: none;
+            animation: none;
+    transform: none;
+  }
+  .typo::before, .typo::after {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
+
+.blood {
+  position: absolute;
+  z-index: -100;
+
+}
 .note {
   font-size: 12pt;
   color: #aa2724;
 line-height: normal;
 }
 
-@-webkit-keyframes colorchange {
-      0% {
-
-        color: blue;
-      }
-
-      10% {
-
-        color: #8e44ad;
-      }
-
-      20% {
-
-        color: #1abc9c;
-      }
-
-      30% {
-
-        color: #d35400;
-      }
-
-      40% {
-
-        color: blue;
-      }
-
-      50% {
-
-        color: #34495e;
-      }
-
-      60% {
-
-        color: blue;
-      }
-
-      70% {
-
-        color: #2980b9;
-      }
-      80% {
-
-        color: #f1c40f;
-      }
-
-      90% {
-
-        color: #2980b9;
-      }
-
-      100% {
-
-        color: pink;
-      }
-    }
-
 .left{
   background-color:#feefe5;
-  margin-top: -25px;
-background-size: auto 100%;
-background-repeat: no-repeat;
+  margin-top: 0px;
   padding: 0px;
-  width: 35%;
+  width: 40%;
   height: 100%;
   position: fixed;
   font-weight: 400;
   float: left;
   overflow-y: hidden;
   overflow-x: hidden;
-  font-family: 'Noto Serif', serif;
-font-size: 14pt;
 }
 
-
-
-
-.name {
-  text-align: left;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-left: 32px;
-  font-family: 'Cardo', serif;
-  font-size: 18pt;
-  color: #aa2724;
-  width: 100%;
-}
 
 .middle {
   padding: 0px;
-    margin-top: -10px;
-  width: 65%;
+    margin-top: 0px;
+  width: 60%;
   vertical-align: top;
   z-index: -100;
 float: right;
@@ -247,26 +324,28 @@ float: right;
 }
 
 .panel, .flip {
-  padding: 5px 10px;
+  padding: 5px 0px;
   text-align: left;
   border: solid 0px #feefe5;
   font-size: 24pt;
   line-height: 1.4em;
-  width: 99%;
+  width: 95%;
 font-family: 'Cardo', serif;
 font-weight: 400;
   background-color: transparent;
 }
 
 .panel {
-  padding: 10px;
+  padding: 0px;
+  margin-right: 15px;
+
   margin-top: -15px;
   display: none;
   font-size: 18pt;
   text-align: left;
   font-family: 'Old Standard TT', serif;
   font-weight: 300;
-  width: 99%;
+  width: 95%;
   line-height: 1.2em;
   background-color: transparent;
 }
@@ -327,11 +406,42 @@ p {
 
 @media screen and (max-width: 700px) {
 
+
+  .halloctober {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+  }
+  .halloctober__banner {
+    margin: auto;
+    padding: 0px;
+      height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .typo {
+      height: 100%;
+    cursor: default;
+    font-family: 'Cardo', serif;
+      color: #aa2724;
+    font-size: 50pt;
+    font-weight: normal;
+    width: 60%;
+    letter-spacing: 0.1rem;
+    margin: auto;
+    outline: none;
+    position: relative;
+    transform: skew(10deg, 2deg);
+    -webkit-animation: float 5s ease-in-out infinite;
+            animation: float 5s ease-in-out infinite;
+  }
+
   #myBtn {
     display: none;
     position: fixed;
     bottom: 30px;
-    margin-right: 10px;
+    margin-right: -10px;
     width: 70px;
     z-index: 99;
     font-size: 50px;
@@ -351,11 +461,10 @@ p {
 
   .left{
     padding: 20px;
-background-color: #feefe5;
     margin-top: -25px;
     margin-bottom: 10px;
     width: 100%;
-    height: 40%;
+    height: 100%;
     position: relative;
     display: block;
     overflow-x: hidden;
@@ -367,7 +476,7 @@ background-color: #feefe5;
 
   .middle {
     padding: 0px;
-      margin-top: -10px;
+      margin-top: 0px;
     width: 100%;
     vertical-align: top;
     z-index: -100;
@@ -377,35 +486,6 @@ background-color: #feefe5;
       display: block;
   }
 
-  .header {
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-
-  .title {
-    text-align: left;
-    margin-top: 0px;
-    margin-left: 0px;
-    font-family: 'Cardo', serif;
-    color: #aa2724;
-    width: 80%;
-    font-size: 40pt;
-    line-height: 1.2em;
-  }
-
-
-  .name {
-    text-align: left;
-    margin: 0 auto;
-    margin-left: 15px;
-    margin-top: 40px;
-    font-family: 'Cardo', serif;
-    font-size: 14pt;
-    color: #aa2724;
-    width: 100%;
-  }
 
   .content {
     position: relative;
@@ -429,14 +509,58 @@ background-color: #feefe5;
   }
 
   .panel {
-    padding: 10px;
+    padding: 0px;
     margin-top: -15px;
     display: none;
-    font-size: 12pt;
+    font-size: 14pt;
     text-align: left;
     font-family: 'Old Standard TT', serif;
     font-weight: 300;
     width: 87.5%;
+  }
+
+
+  a.footnote {
+    font-size: 12pt;
+     text-decoration:none;
+     background-color: #feefe5;
+     padding-left: 2px;
+     padding-right: 2px;
+     margin-right: 2px;
+     -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+     -o-transition: all 2s ease;
+     transition: all 2s ease;
+  }
+
+  a.footnote span {
+    font-size: 12pt;
+     z-index: -1;
+     opacity: 0;
+     position: fixed;
+     bottom: 30px;
+     width: 82%;
+     margin-left: -20px;
+     margin-right: 10px;
+     padding:14px 20px;
+     border-radius:4px;
+     border:2px solid #aa2724;
+     background-color: #feefe5;
+     -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+     -o-transition: all 2s ease;
+     transition: all 2s ease;
+
+  }
+
+  a.footnote:hover span {
+    font-size: 12pt;
+     z-index: 9;
+     opacity: 1;
+     -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+     -o-transition: all 2s ease;
+     transition: all 2s ease;
   }
 
   .responsive {
