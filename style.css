@@ -542,8 +542,8 @@ p {
     padding: 10 10px;
     text-align: left;
     border: solid 1px #feefe5;
-    font-size: 20pt;
-    width: 99%;
+    font-size: 18pt;
+    width: 100%;
     line-height: 1.4em;
   }
 
@@ -551,11 +551,11 @@ p {
     padding: 0px;
     margin-top: -15px;
     display: none;
-    font-size: 14pt;
+    font-size: 12pt;
     text-align: left;
     font-family: 'Old Standard TT', serif;
     font-weight: 300;
-    width: 99%;
+    width: 100%;
   }
 
   a.footnote {
