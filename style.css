@@ -49,7 +49,8 @@
 
 body {
 font-family: 'Belleza', sans-serif;
-background-color: #f2dcd4;
+background: rgb(254,239,229);
+background: linear-gradient(0deg, rgba(254,239,229,1) 0%, rgba(170,39,36,0.7497373949579832) 100%);
 color: #aa2724;
   padding: 0px;
   overflow-x: hidden;
@@ -421,7 +422,7 @@ color: #aa2724;
 }
 
 .panel, .flip:hover {
-	color: #f2dcd4;
+	color: #ebaba6;
 	-moz-transition:all 400ms linear;
     -webkit-transition:all 400ms linear;
     -o-transition:all 400ms linear;
