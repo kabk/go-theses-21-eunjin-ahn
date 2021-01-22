@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Almendra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap');
@@ -422,7 +416,7 @@ color: #aa2724;
 }
 
 .panel, .flip:hover {
-	color: rgba(0, 0, 0, 0.73);
+	color: rgba(249, 231, 225, 0.41);
 	-moz-transition:all 400ms linear;
     -webkit-transition:all 400ms linear;
     -o-transition:all 400ms linear;
