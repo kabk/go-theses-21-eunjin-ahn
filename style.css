@@ -1,37 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Almendra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap');
 @charset "UTF-8";
 
 @font-face {
-  font-family: 'STIXGeneral';
-  src: url('/files/fonts/stixgeneral-webfont.eot');
-  src: local('STIXGeneral'),local('STIXGeneral-Regular'), url('/files/fonts/stixgeneral-webfont.woff') format('woff'), url('/files/fonts/stixgeneral-webfont.ttf') format('truetype'), url('/files/fonts/stixgeneral-webfont.svg#webfontZXtFAA5Q') format('svg');
+  font-family: 'iowanoldst_blk_btblack';
+  src: url('https://kabk.github.io/go-theses-21-eunjin-ahn/bitstream_iowan_old_style_black_bt-webfont.woff2') format('woff2'),
+    url('https://kabk.github.io/go-theses-21-eunjin-ahn/bitstream_iowan_old_style_black_bt-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'STIXGeneral';
-  src: url('/files/fonts/stixgeneralitalic-webfont.eot');
-  src: local('STIXGeneralItalic'),local('STIXGeneral-Italic'), url('/files/fonts/stixgeneralitalic-webfont.woff') format('woff'), url('/files/fonts/stixgeneralitalic-webfont.ttf') format('truetype'), url('/files/fonts/stixgeneralitalic-webfont.svg#webfont2oJeLJIt') format('svg');
+  font-family: 'iowanoldst_btbold_italic';
+  src: url('https://kabk.github.io/go-theses-21-eunjin-ahn/bitstream-iowan-old-style-bold-italic-bt-webfont.woff2') format('woff2'),
+    url('https://kabk.github.io/go-theses-21-eunjin-ahn/bitstream-iowan-old-style-bold-italic-bt-webfont.woff') format('woff');
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
+
 @font-face {
-  font-family: 'STIXGeneral';
-  src: url('/files/fonts/stixgeneralbol-webfont.eot');
-  src: local('STIXGeneralBol'),local('STIXGeneral-Bold'), url('/files/fonts/stixgeneralbol-webfont.woff') format('woff'), url('/files/fonts/stixgeneralbol-webfont.ttf') format('truetype'), url('/files/fonts/stixgeneralbol-webfont.svg#webfontwFpnxWyx') format('svg');
-  font-weight: bold;
+  font-family: 'iowanoldst_btroman';
+  src: url('https://kabk.github.io/go-theses-21-eunjin-ahn/bitstream-iowan-old-style-bt-webfont.woff2') format('woff2'),
+    url('https://kabk.github.io/go-theses-21-eunjin-ahn/bitstream-iowan-old-style-bt-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iowanoldst_btbold';
+  src: url('https://kabk.github.io/go-theses-21-eunjin-ahn/bitstream-iowan-old-style-bold-bt-webfont.woff2') format('woff2'),
+    url('https://kabk.github.io/go-theses-21-eunjin-ahn/bitstream-iowan-old-style-bold-bt-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -48,13 +47,14 @@
 }
 
 body {
+  \
 font-family: 'Belleza', sans-serif;
-background: rgb(254,239,229);
-background: linear-gradient(0deg, rgba(254,239,229,1) 0%, rgba(170,39,36,0.7497373949579832) 100%);
-color: #aa2724;
+  background: rgb(254, 239, 229);
+  background: linear-gradient(0deg, rgba(254, 239, 229, 1) 0%, rgba(0, 0, 0, 1) 50%);
+  color: #aa2724;
   padding: 0px;
   overflow-x: hidden;
-  margin-top: 20px;
+  margin-top: 0px;
   counter-reset: footnotes;
 }
 
@@ -81,16 +81,12 @@ footer {
   border-top: 0px solid silver;
   line-height: normal;
   padding-bottom: 10px;
-
 }
 
 footer ol {
   padding-left: 20px;
   font-weight: normal;
 }
-
-
-
 
 /**
  * Initialiazing a `footnotes` counter on the wrapper
@@ -158,33 +154,33 @@ a {
 a:link {
   color: #aa2724;
   text-decoration: none;
-font-family: 'Belleza', sans-serif;
+  font-family: 'Belleza', sans-serif;
 }
 
 /* visited link */
 a:visited {
   color: #aa2724;
   text-decoration: none;
-font-family: 'Belleza', sans-serif;
+  font-family: 'Belleza', sans-serif;
 }
 
 /* mouse over link */
 a:hover {
   color: #aa2724;
   text-decoration: none;
-font-family: 'Belleza', sans-serif;
+  font-family: 'Belleza', sans-serif;
 }
 
 /* selected link */
 a:active {
   color: #aa2724;
   text-decoration: none;
-font-family: 'Belleza', sans-serif;
+  font-family: 'Belleza', sans-serif;
 }
 
 ::selection {
-  color: #aa2724;
-  background: #F8E6E0;
+  color: #feefe5;
+  background: transparent;
 }
 
 #myBtn {
@@ -221,12 +217,11 @@ ol {
   color: #aa2724;
 }
 
-
 .halloctober {
   width: 100%;
   height: 100%;
-  margin-top: 20px;
-  margin-left: -50px;
+  margin-top: 55px;
+  margin-left: -70px;
 }
 
 .halloctober__banner {
@@ -240,23 +235,29 @@ ol {
 .typo {
   height: 100%;
   cursor: default;
-font-family: 'Cardo';
-  color: #aa2724;
+  font-family: 'iowanoldst_blk_btblack';
+  color: #feefe5;
   font-size: 50pt;
-  font-weight: normal;
   width: 30%;
-  font-weight: 700;
   letter-spacing: 0.1rem;
   margin: auto;
   outline: none;
   position: relative;
-  transform: skew(8deg, 3deg);
+  transform: skew(8deg, 8deg);
   -webkit-animation: float 5s ease-in-out infinite;
   animation: float 5s ease-in-out infinite;
-  -moz-transition:all 400ms linear;
-    -webkit-transition:all 400ms linear;
-    -o-transition:all 400ms linear;
-    transition:all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+
+.typo:hover {
+  color: #feefe5;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
 }
 
 .typo:hover+.fog {
@@ -277,16 +278,14 @@ font-family: 'Cardo';
   -webkit-animation: move_upper_shadow 5s ease-in-out infinite;
   animation: move_upper_shadow 5s ease-in-out infinite;
   opacity: 0;
-  text-shadow: 6px 0 2px rgba(179, 8, 8, 0.4), 12px 0 2px rgba(249, 231, 225, 0.41);
+  text-shadow: 6px 0 2px rgba(249, 231, 225, 0.41), 12px 0 2px transparent;
 }
 
 .typo::after {
   -webkit-animation: move_bottom_shadow 5s ease-in-out infinite;
   animation: move_bottom_shadow 5s ease-in-out infinite;
-  text-shadow: 2px 4px 2px rgba(179, 8, 8, 0.4), 4px 8px 2px rgba(0, 0, 0, 0.73);
+  text-shadow: 2px 4px 2px rgba(249, 231, 225, 0.41), 4px 8px 2px rgba(0, 0, 0, 0.52);
 }
-
-
 
 @-webkit-keyframes move_upper_shadow {
   0%, 90%, 100% {
@@ -369,6 +368,9 @@ font-family: 'Cardo';
 
 .left {
   background-color: transparent;
+  background-image: url("https://i.imgur.com/hAXCFCi.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin-top: 0px;
   padding: 0px;
   width: 40%;
@@ -382,7 +384,7 @@ font-family: 'Cardo';
 
 .middle {
   padding: 0px;
-  margin-top: 0px;
+  margin-top: 40px;
   width: 60%;
   vertical-align: top;
   z-index: -100;
@@ -395,10 +397,10 @@ font-family: 'Cardo';
   margin-top: 20px;
   height: auto;
   font-size: 20pt;
-font-family: 'Belleza', sans-serif;
+  font-family: 'Belleza', sans-serif;
   font-weight: 300;
   width: 90%;
-  margin-left: 31px;
+  margin-left: 55px;
 }
 
 .textWithBlur#aa2724Bg:hover :not(img) {
@@ -411,22 +413,22 @@ font-family: 'Belleza', sans-serif;
   font-size: 24pt;
   line-height: 1.4em;
   width: 95%;
-font-family: 'Cardo', serif;
-color: #aa2724;
+  font-family: 'iowanoldst_btbold_italic';
+  color: #aa2724;
   font-weight: 400;
   background-color: transparent;
-  -moz-transition:all 400ms linear;
-  -webkit-transition:all 400ms linear;
-  -o-transition:all 400ms linear;
-  transition:all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
 }
 
 .panel, .flip:hover {
-	color: #ebaba6;
-	-moz-transition:all 400ms linear;
-    -webkit-transition:all 400ms linear;
-    -o-transition:all 400ms linear;
-    transition:all 400ms linear;
+  color: #feefe5;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
 }
 
 .panel {
@@ -436,9 +438,9 @@ color: #aa2724;
   display: none;
   font-size: 18pt;
   text-align: left;
-font-family: 'Belleza', sans-serif;
+  font-family: 'Belleza', sans-serif;
   font-weight: 300;
-  width: 95%;
+  width: 97.5%;
   line-height: 1.2em;
   background-color: transparent;
   color: #aa2724;
@@ -450,7 +452,7 @@ font-family: 'Belleza', sans-serif;
   display: none;
   font-size: 20pt;
   text-align: left;
-font-family: 'Belleza', sans-serif;
+  font-family: 'Belleza', sans-serif;
   font-weight: 300;
   width: 100%;
   background-color: transparent;
@@ -508,7 +510,7 @@ p {
   .halloctober {
     width: 100%;
     height: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: -30px;
   }
 
@@ -524,18 +526,16 @@ p {
     height: 100%;
     float: left;
     cursor: default;
-font-family: 'Cardo', serif;
-    color: #aa2724;
+    font-family: 'iowanoldst_blk_btblack';
+    color: #feefe5;
     font-size: 40pt;
     padding-bottom: 20px;
-    font-weight: normal;
     width: 50%;
-    font-weight: 700;
     letter-spacing: 0.1rem;
     margin: auto;
     outline: none;
     position: relative;
-    transform: skew(10deg, 2deg);
+    transform: skew(8deg, 8deg);
     -webkit-animation: float 5s ease-in-out infinite;
     animation: float 5s ease-in-out infinite;
   }
@@ -594,7 +594,7 @@ font-family: 'Cardo', serif;
     width: 100%;
     margin-left: 20px;
     margin-right: 0px;
-    margin-top: 20px;
+    margin-top: 00px;
     counter-reset: footnotes;
     font-size: 14pt;
   }
@@ -614,11 +614,10 @@ font-family: 'Cardo', serif;
     display: none;
     font-size: 14pt;
     text-align: left;
-  font-family: 'Belleza', sans-serif;
+    font-family: 'Belleza', sans-serif;
     font-weight: 500;
     width: 95%;
   }
-
 
   .responsive {
     width: 100%;
@@ -631,7 +630,7 @@ font-family: 'Cardo', serif;
     display: none;
     font-size: 10pt;
     text-align: left;
-  font-family: 'Belleza', sans-serif;
+    font-family: 'Belleza', sans-serif;
     font-weight: 300;
     width: 100%;
     background-color: transparent;
