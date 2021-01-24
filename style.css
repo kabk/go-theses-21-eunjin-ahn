@@ -527,14 +527,15 @@ p {
   }
 
   .typo {
+    margin-top: 20px;
     height: 100%;
     float: left;
     cursor: default;
     font-family: 'iowanoldst_blk_btblack';
     color: #feefe5;
-    font-size: 24pt;
+    font-size: 30pt;
     padding-bottom: 20px;
-    width: 55%;
+    width: 50%;
     letter-spacing: 0.1rem;
     margin: auto;
     outline: none;
@@ -653,8 +654,8 @@ p {
   }
 
   footer ol {
-    width: 90%;
-    padding-left: 23px;
+    width: 95%;
+    float: left;
     overflow-wrap: break-word;
   }
 }
