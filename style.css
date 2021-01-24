@@ -533,7 +533,7 @@ p {
     cursor: default;
     font-family: 'iowanoldst_blk_btblack';
     color: #feefe5;
-    font-size: 34pt;
+    font-size: 40pt;
     padding-bottom: 20px;
     width: 60%;
     letter-spacing: 0.1rem;
@@ -549,8 +549,8 @@ p {
     display: none;
     position: fixed;
     bottom: 30px;
-    margin-right: -5px;
-    width: 70px;
+    margin-right: -30px;
+    width: 50px;
     z-index: 99;
     font-size: 50px;
     border: none;
