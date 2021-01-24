@@ -47,7 +47,6 @@
 }
 
 body {
-  \
 font-family: 'Belleza', sans-serif;
   background: rgb(254, 239, 229);
   background: linear-gradient(0deg, rgba(254, 239, 229, 1) 0%, rgba(0, 0, 0, 1) 50%);
@@ -510,9 +509,6 @@ p {
 
   body {
     padding: 20px;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  hyphens: auto;
   }
 
   .halloctober {
@@ -654,15 +650,11 @@ p {
     padding-bottom: 10px;
     display: block;
     overflow-wrap: break-word;
-    word-wrap: break-word;
-  hyphens: auto;
   }
 
   footer ol {
     width: 90%;
     padding-left: 23px;
     overflow-wrap: break-word;
-    word-wrap: break-word;
-  hyphens: auto;
   }
 }
