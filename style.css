@@ -533,7 +533,7 @@ p {
     cursor: default;
     font-family: 'iowanoldst_blk_btblack';
     color: #feefe5;
-    font-size: 30pt;
+    font-size: 24pt;
     padding-bottom: 20px;
     width: 60%;
     letter-spacing: 0.1rem;
@@ -569,7 +569,7 @@ p {
   .left {
     background-image: url("https://i.imgur.com/hAXCFCi.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 120%;
     padding: 0px;
     margin-top: -25px;
     width: 100%;
@@ -662,11 +662,17 @@ p {
   footer ol {
     width: 90%;
     float: left;
-    padding-left: 25px;
+    padding-left: 30px;
     overflow-wrap: break-word;
     word-wrap: break-word;
   hyphens: auto;
     font-weight: normal;
+  }
+
+  li {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  hyphens: auto;
   }
 
   ol {
