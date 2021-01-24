@@ -508,7 +508,7 @@ p {
 @media screen and (max-width: 600px) {
 
   body {
-  padding-left: 20px;
+  padding-left: 0px;
   }
 
   .halloctober {
@@ -581,7 +581,7 @@ p {
   }
 
   .middle {
-    padding: 0px;
+    padding-left: 20px;
     margin-top: 0px;
     width: 100%;
     vertical-align: top;
@@ -606,11 +606,11 @@ p {
   }
 
   .panel, .flip {
-    padding: 10 10px;
+    padding: 0px;
     text-align: left;
     border: solid 0px #feefe5;
-    font-size: 16pt;
-    width: 99%;
+    font-size: 15pt;
+    width: 100%;
     line-height: 1.4em;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -625,7 +625,7 @@ p {
     text-align: left;
     font-family: 'Belleza', sans-serif;
     font-weight: 500;
-    width: 100%;
+    width: 90%;
     overflow-wrap: break-word;
     word-wrap: break-word;
   hyphens: auto;
@@ -663,7 +663,7 @@ p {
   }
 
   footer ol {
-    width: 90%;
+    width: 80%;
     float: left;
     padding-left: 30px;
     overflow-wrap: break-word;
