@@ -533,7 +533,7 @@ p {
     cursor: default;
     font-family: 'iowanoldst_blk_btblack';
     color: #feefe5;
-    font-size: 28pt;
+    font-size: 34pt;
     padding-bottom: 20px;
     width: 60%;
     letter-spacing: 0.1rem;
@@ -651,7 +651,7 @@ p {
   footer {
     font-size: 12pt;
     width: 100%;
-    margin-top: 0px;
+    margin-top: -10px;
     border-top: 0px solid silver;
     line-height: normal;
     padding-bottom: 10px;
