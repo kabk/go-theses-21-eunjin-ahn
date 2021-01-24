@@ -535,7 +535,7 @@ p {
     color: #feefe5;
     font-size: 30pt;
     padding-bottom: 20px;
-    width: 50%;
+    width: 60%;
     letter-spacing: 0.1rem;
     margin: auto;
     outline: none;
@@ -567,6 +567,7 @@ p {
   }
 
   .left {
+    background-size: cover;
     padding: 0px;
     margin-top: -25px;
     width: 100%;
@@ -654,7 +655,7 @@ p {
   }
 
   footer ol {
-    width: 95%;
+    width: 100%;
     float: left;
     overflow-wrap: break-word;
   }
