@@ -752,6 +752,7 @@ p {
     position: relative;
     display: block;
     font-size: 1em;
+    margin-left: 0.5em;
   }
 
   .content {
