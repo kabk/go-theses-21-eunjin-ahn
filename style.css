@@ -366,6 +366,7 @@ ol {
   font-size: 4.2em;
   letter-spacing: 0.1rem;
   margin: auto;
+  text-align: center;
 }
 
 .middle {
@@ -555,6 +556,7 @@ p {
     display: block;
     overflow-x: hidden;
     overflow-y: visible;
+    text-align: center;
   }
 
   .middle {
@@ -714,9 +716,9 @@ p {
   #myBtn {
     display: none;
     position: fixed;
-    bottom: 30px;
-    margin-right: -10px;
-    width: 50px;
+    bottom: 0.5em;
+    margin-right: 1em;
+    width: 20px;
     z-index: 99;
     font-size: 50px;
     border: none;
@@ -738,6 +740,7 @@ p {
     height: 100%;
     font-size: 3.5em;
     position: relative;
+    text-align: center;
     display: block;
     overflow-x: hidden;
     overflow-y: visible;
@@ -759,7 +762,6 @@ p {
     height: auto;
     width: 100%;
     margin-left: 0px;
-    margin-right: 0px;
     margin-top: 00px;
     counter-reset: footnotes;
     overflow-wrap: break-word;
@@ -768,7 +770,7 @@ p {
   }
 
   .panel, .flip {
-    padding-left: 1em;
+    padding-left: 0em;
     text-align: left;
     border: solid 0px #feefe5;
     font-size: 1.2em;
@@ -780,7 +782,8 @@ p {
   }
 
   .panel {
-    padding-left: 1em;
+    padding-left: 0em;
+    padding-right: 1em;
     margin-top: -15px;
     display: none;
     font-size: 0.4em;
@@ -812,13 +815,13 @@ p {
 
   .name {
     font-size: 0.4em;
+    padding-left: 0em;
   }
 
   footer {
     font-size: 0.4em;
-    width: 100%;
-    margin-top: -10px;
-    border-top: 0px solid silver;
+    padding-left: 0em;
+    width: 95%;
     line-height: normal;
     padding-bottom: 10px;
     display: block;
@@ -829,7 +832,7 @@ p {
   }
 
   footer ol {
-    width: 95%;
+    width: 100%;
     float: left;
     overflow-wrap: break-word;
     word-wrap: break-word;
