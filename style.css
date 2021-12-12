@@ -717,7 +717,7 @@ p {
     display: none;
     position: fixed;
     bottom: 0.5em;
-    margin-right: 1em;
+    margin-right: 0.1em;
     z-index: 99;
     border: none;
     outline: none;
@@ -745,14 +745,14 @@ p {
 
   .middle {
     margin-top: 0px;
-    width: 100%;
+    width: 98%;
     vertical-align: top;
     z-index: -100;
     float: left;
     position: relative;
     display: block;
     font-size: 1em;
-    margin-left: 0.5em;
+    margin-left: 1em;
   }
 
   .content {
@@ -819,7 +819,7 @@ p {
   footer {
     font-size: 0.4em;
     padding-left: 0em;
-    width: 95%;
+    width: 90%;
     line-height: normal;
     padding-bottom: 10px;
     display: block;
