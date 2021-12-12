@@ -717,7 +717,7 @@ p {
     display: none;
     position: fixed;
     bottom: 0.5em;
-    margin-right: 0.1em;
+    margin-right: 0em;
     z-index: 99;
     border: none;
     outline: none;
